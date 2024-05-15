@@ -1,11 +1,12 @@
 name: Build G-Earth
 
 on:
-  push:
-    paths:
-      - '.github/workflows/**'
-      - 'G-Earth/**'
-      - 'pom.xml'
+  workflow_dispatch:
+    push:
+      paths:
+        - '.github/workflows/**'
+        - 'G-Earth/**'
+        - 'pom.xml'
 
 jobs:
   build:
